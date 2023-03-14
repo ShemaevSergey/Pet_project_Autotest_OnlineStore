@@ -223,7 +223,8 @@ public class OrderingTests {
         driver.findElement(accountUserOrdersButtonLocator).click();
 
 
-        Assert.assertTrue("", driver.findElement(ordersNumberInAccountUserLocator).isDisplayed());
+        Assert.assertTrue("Заказ не отображется в личном кабинете клиента",
+                driver.findElement(ordersNumberInAccountUserLocator).isDisplayed());
 
 
 

@@ -174,7 +174,8 @@ public class BasketTests {
         actualResultPrice = number1.doubleValue();
         expectedResult = productPrice * productQuantity;
 
-        Assert.assertEquals("", expectedResult,actualResultPrice, 0);
+        Assert.assertEquals("Сумма всех товаров не равна ожидаемому результату",
+                expectedResult,actualResultPrice, 0);
     }
 
     @Test
@@ -242,7 +243,8 @@ public class BasketTests {
 
         expectedResultPrice = priceWithoutDiscount - discountValue;
 
-        Assert.assertEquals("", actualResultPrice, expectedResultPrice, 0);
+        Assert.assertEquals("Сумма товара не равна ожидаемому результату",
+                actualResultPrice, expectedResultPrice, 0);
     }
 
     @Test

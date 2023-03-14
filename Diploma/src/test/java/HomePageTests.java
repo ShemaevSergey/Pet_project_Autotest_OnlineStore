@@ -203,7 +203,8 @@ public class HomePageTests {
 
     @Test
     public void newArrivalsStickerOnCard() {
-        Assert.assertTrue("", driver.findElement(stickerNewLocator).isDisplayed());
+        Assert.assertTrue("На карточке товара в категории НОВЫЕ нет стикера с этой пометкой",
+                driver.findElement(stickerNewLocator).isDisplayed());
     }
 
 }
